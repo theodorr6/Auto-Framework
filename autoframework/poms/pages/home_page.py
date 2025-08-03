@@ -1,4 +1,5 @@
 from autoframework.poms.pages.base_page import BasePage
+from autoframework.utils import translate
 
 
 class HomePage(BasePage):
@@ -9,7 +10,7 @@ class HomePage(BasePage):
 
     CONFIRM_LOGIN = ""
     LOGIN_REGISTER_BUTTON = "//a[text()=' Signup / Login']"
-    CONSENT_BTN = "//p[text()='Consent']"
+    CONSENT_BTN = "//p[text()='Consimțământ']"
     HOME_BUTTON = "//a[contains(@style,'orange')]"
 
     def verify_homepage(self):

@@ -1,3 +1,5 @@
+import time
+
 import pytest
 
 from autoframework.poms.pages.create_account_page import CreateAccountPage
@@ -16,6 +18,7 @@ class TestRegister:
         login_page = LoginPage(self.driver)
         create_acc_page = CreateAccountPage(self.driver)
 
+
         home_page.access_url(self.url)
 
         home_page.click_consent()
@@ -29,3 +32,10 @@ class TestRegister:
         login_page.click_sign_up()
 
         assert create_acc_page.verify_acc_info_title()
+
+        create_acc_page.select_title()
+
+        create_acc_page.type_password("Parola")
+
+        time.sleep(5)
+

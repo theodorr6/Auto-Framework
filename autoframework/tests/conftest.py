@@ -10,7 +10,8 @@ def log_in(request):
     driver = request.cls.driver
     login_page = LoginPage(driver)
     home_page = HomePage(driver)
-    login_page.access_url()
+    login_page.access_url("https://automationexercise.com/login")
+    home_page.click_consent()
     login_page.type_username()
     login_page.type_password()
     login_page.click_submit_button()
