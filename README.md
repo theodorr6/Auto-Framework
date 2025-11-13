@@ -7,9 +7,19 @@ Prerequisites
 - A WebDriver (e.g., chromedriver) available on PATH or configured by your driver fixture.
 
 
-Activate venv
+Create new venv
+```bash
+python -m venv venv_name
+```
+
+Activate venv on MacOs/Linux
 ```bash
 source .venv/bin/activate
+```
+
+Activate venv on Windows
+```bash
+venv_name\Scripts\activate.bat
 ```
 
 Install requirements
