@@ -6,7 +6,13 @@ Prerequisites
 - Python 3.8+
 - A WebDriver (e.g., chromedriver) available on PATH or configured by your driver fixture.
 
-Install
+
+Activate venv
+```bash
+source .venv/bin/activate
+```
+
+Install requirements
 
 ```bash
 python -m pip install -r requirements.txt
